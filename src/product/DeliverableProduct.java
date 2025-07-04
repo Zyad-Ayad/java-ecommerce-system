@@ -13,4 +13,9 @@ public class DeliverableProduct extends Product implements Deliverable {
         return weight;
     }
 
+    @Override
+    public String getName() {
+        return super.getName();
+    }
+
 }

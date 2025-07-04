@@ -1,10 +1,12 @@
 package product;
 
 import java.time.LocalDate;
+
 public class DeliverableExpirableProduct extends ExpirableProduct implements Deliverable {
     private double weight;
 
-    public DeliverableExpirableProduct(String name, double price, int quantity, LocalDate expirationDate, double weight) {
+    public DeliverableExpirableProduct(String name, double price, int quantity, LocalDate expirationDate,
+            double weight) {
         super(name, price, quantity, expirationDate);
         this.weight = weight;
     }
@@ -14,5 +16,9 @@ public class DeliverableExpirableProduct extends ExpirableProduct implements Del
         return weight;
     }
 
-    
+    @Override
+    public String getName() {
+        return super.getName();
+    }
+
 }

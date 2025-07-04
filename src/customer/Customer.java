@@ -2,9 +2,9 @@ package customer;
 
 public class Customer {
     private String name;
-    double balance;
+    private double balance;
 
-    public Customer(String name, int balance) {
+    public Customer(String name, double balance) {
         this.name = name;
         this.balance = balance;
     }
